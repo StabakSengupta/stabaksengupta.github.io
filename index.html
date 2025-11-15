@@ -4,129 +4,130 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stabak Sengupta — Sound Designer & Composer</title>
+  <meta name="description" content="Stabak Sengupta — Sound designer, composer and audio engineer. FMOD & Unity integration, field recording, organic SFX, and world-instrument based compositions." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0e1522; --card:#0b1220; --muted:#8ea0b8; --accent:#8b5cf6; --accent2:#6366f1;
-      --radius:16px; --maxw:1100px; color-scheme:dark;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter,system-ui; background:linear-gradient(180deg,var(--bg),#0a0f1c 85%); color:#e7ecf5;}
-    .container{max-width:var(--maxw); margin:auto; padding:28px 20px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;align-items:center;gap:14px}
-    .mark{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:800}
-    nav a{margin-left:20px;color:var(--muted);font-weight:600;text-decoration:none}
-    .hero{margin-top:36px;display:grid;grid-template-columns:1fr 360px;gap:32px}
-    .card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 8px 32px rgba(0,0,0,0.45)}
-    h1{font-size:30px;margin-bottom:12px;font-weight:800}
-    p.lead{color:var(--muted);font-size:15px;line-height:1.6;margin-bottom:20px}
-    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:12px 20px;border-radius:12px;color:white;font-weight:700;text-decoration:none;display:inline-block;margin-top:6px}
-    .skills{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
-    .chip{background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:999px;font-weight:600;color:var(--muted)}
-    section{margin-top:42px}
-    .grid-3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    footer{text-align:center;margin-top:60px;color:var(--muted);padding:20px 0}
-    @media(max-width:880px){.hero{grid-template-columns:1fr;}nav a{display:none}}
+    :root{ --bg:#071226; --card:#0b1220; --muted:#9fb1c8; --accent:#7c3aed; --accent2:#4f46e5; --glass:rgba(255,255,255,0.03); --radius:14px; --maxw:1200px }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,var(--bg),#041025 90%);color:#eaf3ff;margin:0}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:900}
+    nav{display:flex;gap:18px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:22px}
+    .card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 8px 36px rgba(2,6,23,0.6)}
+    h1{font-size:30px;margin:0 0 8px}
+    p.lead{color:var(--muted);line-height:1.6}
+    .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:700}
+    .profile img{width:100%;border-radius:12px}
+    section{margin-top:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .projects .meta{color:var(--muted);margin-top:8px}
+    footer{margin-top:40px;color:var(--muted);text-align:center;padding:18px}
+    a.button{display:inline-block;padding:10px 16px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;border-radius:12px;text-decoration:none;font-weight:800}
+    dl{display:grid;grid-template-columns:140px 1fr;gap:6px 18px}
+    dt{color:var(--muted);font-weight:700}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.nav-collapse{display:none}}
   </style>
 </head>
 <body>
-<div class="container">
-
-<header>
-  <div class="logo">
-    <div class="mark">SS</div>
-    <div>
-      <div style="font-weight:800;font-size:18px">Stabak Sengupta</div>
-      <div style="font-size:12px;color:var(--muted)">Sound Designer • Composer • Audio Engineer</div>
-    </div>
-  </div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#music">Music</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-<section class="hero">
-  <div>
-    <div class="card">
-      <h1>Crafting immersive sound for games, film & storytelling worlds</h1>
-      <p class="lead">I create organic sound design, expressive compositions, and dynamic FMOD systems rooted in world instruments, field recording, and emotional narrative craft. My work blends precision with artistry — merging tradition, technology, and imagination.</p>
-      <a class="cta" href="#contact">Hire / Collaborate</a>
-
-      <div class="skills">
-        <div class="chip">FMOD</div>
-        <div class="chip">Unity</div>
-        <div class="chip">Field Recording</div>
-        <div class="chip">Mixing & Mastering</div>
-        <div class="chip">Bansuri • Sarod</div>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SS</div>
+        <div>
+          <div style="font-weight:900;font-size:18px">Stabak Sengupta</div>
+          <div style="color:var(--muted);font-size:13px">Sound Designer • Composer • Audio Engineer</div>
+        </div>
       </div>
-    </div>
+      <nav class="nav-collapse">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <section id="about">
-      <div class="card" style="margin-top:20px">
-        <h2>About</h2>
-        <p class="lead">Since 2010, I’ve been shaping sonic identities across games, film, interactive media, and wellness. My work blends folk instruments, ambient textures, and modern sound design — focusing on emotional clarity, narrative depth, and immersive realism.</p>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Designing organic SFX, interactive music systems, and evocative compositions</h1>
+            <p class="lead">I’ve been composing, recording and designing audio since 2010. My approach mixes folk and classical instruments (bansuri, sarod, rabab, banjo), live field recordings, and modern production techniques.</p>
+            <div style="margin-top:14px">
+              <a class="button" href="#contact">Hire / Collaborate</a>
+              <a class="button" href="#music" style="margin-left:12px;opacity:0.95">Listen — YouTube</a>
+            </div>
 
-    <section id="work">
-      <h2 style="margin-bottom:16px">Selected Work</h2>
-      <div class="grid-3">
-        <div class="card"><strong>Kurukshetra: Ascension</strong><div style="color:var(--muted);margin-top:8px">Music • SFX • FMOD Systems</div></div>
-        <div class="card"><strong>The Last Seed</strong><div style="color:var(--muted);margin-top:8px">Atmosphere • Ambience • Audio Design</div></div>
-        <div class="card"><strong>Mental Wellness Music App</strong><div style="color:var(--muted);margin-top:8px">Meditative • Manifestation • Healing Audio</div></div>
-      </div>
-    </section>
-  </div>
+            <div class="chips" aria-hidden>
+              <div class="chip">FMOD</div>
+              <div class="chip">Unity</div>
+              <div class="chip">Field Recording</div>
+              <div class="chip">Mix & Master</div>
+              <div class="chip">Interactive UI Audio</div>
+            </div>
 
-  <aside class="profile">
-    <div class="card" style="text-align:center">
-      <img src="https://picsum.photos/360/360" style="border-radius:12px;width:100%;height:auto" />
-      <h3 style="margin-top:14px">Stabak Sengupta</h3>
-      <div style="color:var(--muted);font-weight:600">Sound Designer & Composer</div>
-      <div style="margin-top:14px">Based in India • Remote-friendly</div>
-      <a class="cta" style="margin-top:18px" href="mailto:findstabak@gmail.com" target="_blank">Email me</a>
-    </div>
-  </aside>
-</section>
+            <section id="about" style="margin-top:18px">
+              <h2>About</h2>
+              <div class="card" style="margin-top:12px">
+                <p class="lead">I’ve been composing, recording and designing audio since 2010. My workflow blends traditional instruments with modern production for immersive soundscapes.</p>
+                <dl style="margin-top:12px">
+                  <dt>Location</dt><dd>India (Remote-friendly)</dd>
+                  <dt>Email</dt><dd><a href="mailto:findstabak@gmail.com">findstabak@gmail.com</a></dd>
+                  <dt>Experience</dt><dd>Sound design & composition since 2010; game audio for 6+ years</dd>
+                </dl>
+              </div>
+            </section>
 
-<section id="music">
-  <h2>Music & Audio Samples</h2>
-  <div class="grid-3">
-    <a class="card" href="https://youtube.com/playlist?list=PL-QxAHIvUfm6Yi0SxJevqPwqGKZTKyy9h" target="_blank">YouTube Playlist — Music, Jams & Game Audio</a>
-    <a class="card" href="https://www.instagram.com/stabaksengupta/" target="_blank">Instagram — Behind the Scenes & Audio Snippets</a>
-    <a class="card" href="https://www.linkedin.com/in/stabak-sengupta-873a6016/" target="_blank">LinkedIn — Work & Updates</a>
-  </div>
-</section>
+            <section id="skills" style="margin-top:18px">
+              <h3 style="margin-bottom:10px">Tools & Specialties</h3>
+              <div class="card">
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <div class="chip">FMOD — Dynamic Music</div>
+                  <div class="chip">Unity Audio Integration</div>
+                  <div class="chip">Field Recording</div>
+                  <div class="chip">Organic Foley</div>
+                  <div class="chip">Mixing & Mastering</div>
+                </div>
+              </div>
+            </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p style="color:var(--muted);margin-bottom:14px">Email preferred — or send a quick message below:</p>
-    <form onsubmit="event.preventDefault();alert('Message sent (demo). Replace with Formspree or backend.')">
-      <div style="display:flex;flex-direction:column;gap:10px">
-        <input placeholder="Your name" required style="padding:12px;border-radius:10px;background:transparent;color:white;border:1px solid rgba(255,255,255,0.08)">
-        <input placeholder="Email" required style="padding:12px;border-radius:10px;background:transparent;color:white;border:1px solid rgba(255,255,255,0.08)">
-        <textarea rows="5" placeholder="Message" required style="padding:12px;border-radius:10px;background:transparent;color:white;border:1px solid rgba(255,255,255,0.08)"></textarea>
-        <button class="cta" type="submit">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
+          </div>
 
-</main>
+          <section id="work" style="margin-top:18px">
+            <h2>Selected & Recent Projects</h2>
+            <div class="grid-3 projects" style="margin-top:12px">
+              <div class="card">
+                <strong>Kurukshetra: Ascension</strong>
+                <div class="meta">Music, SFX, FMOD integration — featured for surpassing 1M players across PC, Android & iOS.</div>
+                <div style="margin-top:10px;color:var(--muted)">Role: Composer, Sound Designer, FMOD Implementation</div>
+              </div>
 
-<footer>Built with ❤️ • © Stabak Sengupta</footer>
-</div>
+              <div class="card">
+                <strong>The Last Seed</strong>
+                <div class="meta">Prototype audio: ambience, interactive footsteps, atmospheric implementation.</div>
+                <div style="margin-top:10px;color:var(--muted)">Role: Audio Implementation & Soundscapes</div>
+              </div>
 
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})});
-});
-</script>
-</body>
-</html>
+              <div class="card">
+                <strong>Mental Wellness Music App (concept)</strong>
+                <div class="meta">Original meditative & manifestation tracks designed for mental wellness.</div>
+                <div style="margin-top:10px;color:var(--muted)">Role: Composer & Concept Lead</div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="profile">
+          <div class="card profile" style="text-align:center">
+            <img src="https://picsum.photos/360/360?random=7" alt="Portrait — Stabak Sengupta" />
+            <h3 style="margin-top:12px">Stabak Sengupta</h3>
+            <div style="color:var(--muted);font-weight:700">Sound Designer & Composer</div>
+            <p style="margin-top:10px;color:var(--muted)">Plays bansuri, sarod, rabab; recently exploring banjo & sarod.</p>
+            <div style="margin-top:12px;display:flex;gap:8px;justify-content:center">
+              <a class="button" href="https://youtube.com/playlist?list=PL-QxAHIvUfm6Yi0SxJevqPwqGKZTKyy9h" target="_blank">YouTube</a>
+              <a class="button" href="https://www.instagram.com/stabakseng
